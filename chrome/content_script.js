@@ -108,13 +108,13 @@ if(typeof contentScriptLoaded == "undefined") {
     while(words.length > 0) {
       var tweet = '';
       var tweetLength = 0;
-      var nextWordLength = isUrl(words[0]) ? 22 : words[0].length +1;
+      var nextWordLength = isUrl(words[0]) ? 24 : words[0].length +1;
       while(words.length > 0 && (tweetLength + nextWordLength) <= 140) {
         tweet += ' '+words[0]
         tweetLength += nextWordLength;
         words = words.slice(1);
         if(words.length > 0)
-          nextWordLength = isUrl(words[0]) ? 22 : words[0].length +1;
+          nextWordLength = isUrl(words[0]) ? 24 : words[0].length +1;
       }
       tweets.push(tweet.substr(1));
     }
