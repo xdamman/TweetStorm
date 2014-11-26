@@ -1,0 +1,19 @@
+{
+  "name" : "TweetStorm",
+  "version" : "0.0.2",
+  "description" : "Get rid of the 140 characters limit on Twitter.com",
+  "background" : { "scripts": ["background.js"], "persistent": false },
+  "permissions" : [
+    "webNavigation",
+    "activeTab",
+    "https://twitter.com/*"
+   ],
+  "minimum_chrome_version" : "6.0.0.0",
+  "icons" : {
+    "16" : "img/tweetstorm-16.png",
+    "48" : "img/tweetstorm-32.png",
+    "64" : "img/tweetstorm-64.png",
+    "128" : "img/tweetstorm-128.png"
+  },
+  "manifest_version": 2
+}
